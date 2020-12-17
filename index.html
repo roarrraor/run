@@ -10,6 +10,7 @@
     <link href = "roar.css" rel = "stylesheet" type = "text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
   <script>
       function play() {
         var audio = document.getElementById("audio");
@@ -22,7 +23,12 @@ body {
   font-family: 'Press Start 2P', cursive;
   font-size: 15px;
 }
-
+.blink {
+      animation: blink-animation 0.5s steps(5, start) infinite;
+      -webkit-animation: blink-animation 0.5s steps(5, start) infinite;
+      color: white;
+      font-size: 20px;
+    }
  .music{
       font-family: 'Press Start 2P',cursive;
       border: none;
@@ -35,8 +41,6 @@ body {
       }
 
 </style>
-  </head>
-
   <body>
 
     <h1>Run Roarrr Run !!!!!</h1>

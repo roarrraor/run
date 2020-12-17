@@ -11,10 +11,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <style>
-body {
+
+.body{
   font-family: 'Press Start 2P', cursive;
-  font-size: 20px;
+  font-size: 15px;
 }
+
+ .music{
+      font-family: 'Press Start 2P',cursive;
+      border: none;
+      padding: 2px 10px;
+      font-size: 3px;
+      outline: none;
+      background: transparent;
+      color: silver;
+      border: 2px solid silver;
+      }
+
 </style>
   </head>
 
@@ -23,6 +36,13 @@ body {
     <h1>Run Roarrr Run !!!!!</h1>
 
     <canvas></canvas>
+
+ <br>
+     <div> 
+      <button class="music" onclick="play();"><font color="white" face="Press Start 2P" ,cursive;" size="4" class="blink">PRESS START</font> 
+       <audio id="audio" src="https://f.top4top.io/m_178901pc30.mp3"></audio> </button>
+     </div>
+     <br>
 
     <p>Click or tap to jump!</p>
 

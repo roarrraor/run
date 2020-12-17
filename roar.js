@@ -808,6 +808,18 @@ some stuff I have not covered. */
     }
 
   };
+             
+             
+
+      function play() {
+
+        var audio = document.getElementById("audio");
+
+        audio.play();
+
+      }
+
+};
 
       ////////////////////
     //// INITIALIZE ////

@@ -11,25 +11,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   </head>
-  <script>
-      function play() {
-        var audio = document.getElementById("audio");
-        audio.play();
-      }
-    </script> 
+  
 <style>
-
 body {
   font-family: 'Press Start 2P', cursive;
-  font-size: 15px;
+  font-size: 12px;
 }
+
 .blink {
       animation: blink-animation 0.5s steps(5, start) infinite;
       -webkit-animation: blink-animation 0.5s steps(5, start) infinite;
       color: white;
       font-size: 20px;
     }
- .music{
+
+ @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+    }
+
+    @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+    }
+
+ .music {
       font-family: 'Press Start 2P',cursive;
       border: none;
       padding: 2px 10px;
@@ -49,12 +57,12 @@ body {
 
  <br>
      <div> 
-      <button class="music" onclick="play();"><font color="white" face="Press Start 2P" ,cursive;" size="4" class="blink">PRESS START</font> 
+      <button class="music" onclick="play();"><font color="white" face="Press Start 2P" ,cursive;" size="2" class="blink">TAP TO JUMP</font> 
        <audio id="audio" src="https://f.top4top.io/m_178901pc30.mp3"></audio> </button>
      </div>
      <br>
 
-    <p>Click or tap to jump!</p>
+    <p>Enjoy the game untill you get bored</p>
 
     <script src = "roar.js" type = "text/javascript"></script>
 

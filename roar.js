@@ -397,7 +397,7 @@ some stuff I have not covered. */
       }
 
       // Draw distance
-      this.buffer.font = "20px Arial";
+      this.buffer.font = "15px Arial";
       this.buffer.fillStyle = "#ffffff";
       this.buffer.fillText(String(Math.floor(game.distance/10) + " / " + Math.floor(game.max_distance/10)), 10, 20);
 
@@ -808,8 +808,6 @@ some stuff I have not covered. */
     }
 
   };
-             
-             
 
       ////////////////////
     //// INITIALIZE ////
@@ -836,3 +834,8 @@ some stuff I have not covered. */
   window.addEventListener("touchend", controller.onOff);
 
 })();
+
+function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      };

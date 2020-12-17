@@ -834,8 +834,3 @@ some stuff I have not covered. */
   window.addEventListener("touchend", controller.onOff);
 
 })();
-
-function play() {
-        var audio = document.getElementById("audio");
-        audio.play();
-      };
